@@ -1,0 +1,18 @@
+button {
+    background-color: teal;
+    color: white;
+}
+
+@media (max-width: 640px) {
+    #masthead {
+      position: static;
+    }
+  
+  }
+  @media (min-width: 641px) and (max-width: 768px){
+  
+  }
+  
+  @media (min-width: 769px) and (max-width: 980px){
+      
+  }
