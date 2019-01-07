@@ -28,17 +28,19 @@ $(document).on("click", "button", function() {
 
     var results = response.data;
     
-    for(var i = 0; i < results.lenth; i++) {
+    for(var i = 0; i < results.length; i++) {
+        console.log(results);
         var contentDiv = $("<div>");
-        var p = $("<p>").text("ratings: " + results[i].ratings);
+        var p = $("<p>").text("rating: " + results[i].rating);
         var contentImage = $("<img>");
-        contentImage.attr("src", results[i].image.fixed_height.url);
-        contentDiv.append(contentImage);
+        contentImage.attr("src", results[i].images.fixed_height.url);
         contentDiv.append(p);
+        contentDiv.append(contentImage);
 
-        $("#gif"),prepend(contentDiv);
+        $("#gif").append(contentDiv);
 
     }
+    console.log(results);
 
     });
 
@@ -51,7 +53,7 @@ $(document).on("click", "button", function() {
         b.attr("#data-animal");
         b.text("userInput");
         $("new-animal").append(b);
-    })
+    });
 
 //});
 
