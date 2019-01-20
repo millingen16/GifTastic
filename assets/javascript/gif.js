@@ -52,7 +52,7 @@ $(document).on("click", "button", function() {
         b.addClass("new-animal");
         b.attr("#data-animal");
         b.text("userInput");
-        $("new-animal").append(b);
+        $("new-animal").apeend(b);
     });
 
 //});
